@@ -1,0 +1,26 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+
+vector<int> concatenation(vector<int> &nums)
+{
+    vector<int> ans;
+    for (int val : nums)
+    {
+        ans.push_back(val);
+    }
+    for (int val : nums)
+    {
+        ans.push_back(val);
+    }
+    return ans;
+}
+
+int main()
+{
+    vector<int> nums = {2, 3, 4, 5};
+    for (int val : concatenation(nums))
+    {
+        cout << val;
+    }
+}
